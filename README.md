@@ -5,16 +5,33 @@
 # Ejecturar En Desarrollo
 1. Clonar el repositorio
 2. Ejecutar 
+
 ```
 npm install  
 ```
+
 3. Tener Nest CLI instalado
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Levantar la base de datos
 ```
 docker-compose up -d
+```
+
+5. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
+
+6. Llenar las variables definidas en el .env
+
+7. Ejecutar la aplicación usando
+```
+npm run start:dev
+```
+
+8. Reconstruir base de datos con semilla
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Stack Usado
